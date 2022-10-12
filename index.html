@@ -4,18 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pura Vida Viajes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <div>
-        <nav>
-        <a href="paises.html">Paises</a>
-        <a href="">inicio</a>
-        <a href="registro.html">Registro</a>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html"><img src="assets/logo.png" alt="" class="logo"></a>
+            <ul class="main-navigation">
+                <li>
+                    <div class="dropdown-container">
+                        <p class="dropdown-label">Paises<i class="fa-solid fa-chevron-down dropdown-icon"></i></p>
+                        <ul class="dropdown hidden">
+                            <p class="label-continentes">Ver por continentes</p>
+                            <menu class="menu-continentes">
+                                <li>América</li>
+                            <li>África</li>
+                            <li>Asia</li>
+                            <li>Europa</li>
+                            <li>Oceanía</li>
+
+                            </menu>
+                            
+                            <li><a href="/views/paises.html">Ver todos</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Actividades</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <menu class="account-menu">
+                <li><a href="#">Ingresar</a></li>
+                <li><a href="views/registro.html" class="btn-cta-primary">Registro</a></li>
+            </menu>
+
+        </div>
+       
     </nav>
-</div>
+
+
+    <header>
+        <div class="hero"></div>
     </header>
-    
+
+    <script src="js/app.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 </html>
