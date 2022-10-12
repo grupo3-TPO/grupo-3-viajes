@@ -1,0 +1,115 @@
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: var(--primario-500);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    color: var(--white);
+    
+    /* overflow: hidden; */
+}
+
+.navbar a{
+    color: var(--white);
+}
+
+.navbar-content{
+    margin: 0 auto;
+    max-width: 1136px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    height: 50px;
+}
+
+.main-navigation, .account-menu{
+    display: flex;
+    gap: 35px;
+}
+
+.main-navigation{
+    
+}
+
+.dropdown-container{
+    position: relative;
+    
+}
+
+.dropdown-label {
+    cursor: pointer; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5em;
+    
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    background-color: var(--primario-500);
+    padding: 1em 0;
+    border-radius: 0.5em;
+    width: 15.625em;
+    transition: visibility 0s, opacity 0.5s;
+    
+
+}
+.dropdown-icon{
+    transition: all 0.5s;
+}
+.up {
+    transform: rotate(180deg);
+}
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.label-continentes{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.6875em;
+    padding: 0 1em;
+}
+
+.menu-continentes::before, .menu-continentes::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 65%;
+    background-color: var(--white);
+}
+.dropdown li{
+    width: 100%;
+    padding: 0.5em 1em;
+}
+
+.dropdown li:hover{
+    background-color: var(--primario-100);
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/assets/home-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
