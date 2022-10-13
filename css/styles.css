@@ -12,7 +12,7 @@ h1{
 :root{
     --primario-500:#807bfb;
     --primario-100:#9b97fb;
-    --primario-500:#6561c7;
+    --primario-900:#6561c7;
     --secundario-500 : #FF5678;
     --secundario-100: #ff8aa1;
     --secundario-900: #e54d6c;
@@ -42,3 +42,15 @@ body{
 }
 
 
+@media  only screen and (max-width: 1160px){
+    :root{
+        font-size: 14px;
+    }
+}
+
+@media  only screen and (max-width: 800px){
+   
+    :root{
+        font-size: 12px;
+    }
+}
