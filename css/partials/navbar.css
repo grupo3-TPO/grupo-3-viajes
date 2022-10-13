@@ -12,6 +12,8 @@ a{
     height: 60px;
     position: fixed;
     color: var(--white);
+    padding: 2.5em 0;
+    z-index: 1;
 
 }
 
@@ -124,16 +126,6 @@ a{
     cursor: pointer;
 }
 
-
-
-/* HERO */
-.hero{
-    height: 100vh;
-    width: 100%;
-    background-image: url(/assets/home-1.jpg);
-    background-position: center;
-    background-size: cover;
-}
 
 
 
