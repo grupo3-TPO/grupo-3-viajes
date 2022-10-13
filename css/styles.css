@@ -1,6 +1,9 @@
 /* Fuente Poppins - Variantes (regular: 400; medium:600; semibold:600; bold:700) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+@import url(partials/navbar.css);
+@import url(partials/hero.css);
+
 /* Variables para los colores
 Ejemplo para usar:
 h1{
@@ -10,7 +13,7 @@ h1{
 :root{
     --primario-500:#807bfb;
     --primario-100:#9b97fb;
-    --primario-500:#6561c7;
+    --primario-900:#6561c7;
     --secundario-500 : #FF5678;
     --secundario-100: #ff8aa1;
     --secundario-900: #e54d6c;
@@ -21,6 +24,8 @@ h1{
     --gris-500:#393C40;
     --error:#B71C1C;
     --success:#4CAF50;
+    --white: #F6F7F9;
+    font-size: 16px;
 }
 
 * {
@@ -31,4 +36,22 @@ h1{
 
 html,body{
     height: 100%
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+}
+
+
+@media  only screen and (max-width: 1160px){
+    :root{
+        font-size: 14px;
+    }
+}
+
+@media  only screen and (max-width: 800px){
+   
+    :root{
+        font-size: 12px;
+    }
 }

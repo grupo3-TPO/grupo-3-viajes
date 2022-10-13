@@ -1,0 +1,48 @@
+/* HERO */
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/assets/home-1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.busqueda-select{
+    appearance: none;
+    cursor: pointer;
+    background-color: var(--white);
+    color:var(--texto-900);
+    border: 1px solid var(--texto-900);
+    border-radius: 3.125em;
+    font-family: inherit;
+    height: 50px;
+    width: 70%;
+    padding: 0 2em;
+    position: relative;
+    transition: all 1s ease-in;
+    animation-duration: 1.5s;
+    animation-name: busqueda;
+}
+ .busqueda-icon{
+    position: relative;
+    right: 3em;
+    color:var(--texto-900)
+ }
+
+
+
+/* ANIMACIONES */
+@keyframes busqueda {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to{
+        height: 50px;
+        opacity: 1;
+    }
+}

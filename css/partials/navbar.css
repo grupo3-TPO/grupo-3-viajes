@@ -1,0 +1,166 @@
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: var(--primario-500);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    color: var(--white);
+    padding: 2.5em 0;
+    z-index: 1;
+
+}
+
+.navbar a{
+    color: var(--white);
+}
+
+.navbar-content{
+    margin: 0 auto;
+    max-width: 71em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    height: 3.125em;
+}
+
+.main-navigation, .account-menu{
+    display: flex;
+    gap:  2.1875em;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-label {
+    cursor: pointer; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5em;
+    
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    background-color: var(--primario-900);
+    padding: 1em 0;
+    border-radius: 0.5em;
+    width: 15.625em;
+    transition: opacity 0.5s;
+}
+
+.dropdown-icon{
+    transition: all 0.5s;
+}
+
+.up {
+    transform: rotate(180deg);
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.label-continentes{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.6875em;
+    padding: 0 1em;
+}
+
+.menu-continentes::before, .menu-continentes::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 65%;
+    background-color: var(--white);
+}
+.dropdown li{
+    width: 100%;
+    padding: 0.5em 1em;
+}
+
+.dropdown li:hover{
+    background-color: var(--primario-100);
+}
+
+.btn-cta-primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.9em;
+    background-color: var(--secundario-500);
+    padding: 1em;
+    border-radius: 0.5em;
+    font-weight: 600;
+}
+
+.btn-cta-primary:hover{
+    background-color: var(--secundario-100);
+}
+
+.btn-cta-primary:active{
+    background-color: var(--secundario-900);
+}
+
+.hamburguer-menu{
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (min-width:801px){
+    .main-navigation{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media  only screen and (max-width: 800px){
+   
+    :root{
+        font-size: 10px;
+    }
+    .main-navigation{
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform:translateX(-50%) ;
+        background-color: var(--primario-500);
+        padding: 2em 5em 3em;
+    }
+    .hamburguer-menu{
+        display: block;
+        z-index: 5;
+    }
+
+    .navbar{
+        padding:2em ;
+    }
+
+
+
+}
