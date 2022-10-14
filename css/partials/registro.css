@@ -1,0 +1,102 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+    background-color:#9b97fb;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration-color: white;
+}
+
+header,
+p{
+    margin-top:9px;
+    text-align: center;
+    color: white;
+}
+.registrarse{
+    width:400px;
+    color:white;
+    padding:30px;
+    margin: auto;
+    margin-top:100px;
+    border-radius:4px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration-color: white;
+
+}
+.registrarse h2 {
+    font-size:22px;
+    margin-bottom:20px;
+    border-bottom-style: groove;
+    text-decoration-color: white;
+}
+.controls{
+    width:100%;
+    background-color:white ;
+    padding:10px;
+ border-radius:4 px;
+ margin-bottom:16px;
+ border: 1px solid #9b97fb;
+ text-decoration-color: white;
+}
+
+.registrarse p{
+    height:40px;
+    text-align: center;
+    text-decoration:none;
+    line-height:40px;
+}
+.tag
+.encabezado{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    text-decoration-color: white;
+}
+
+.registrarse a:hover{
+    color:white;
+    text-decoration:underline;
+  
+
+}
+.registrarse .botton {
+    width:100%;
+    border:none;
+    background-color:#FF5678;
+    padding:12px;
+    color:white;
+    margin:16px 0;
+    font-size: 16px;
+    border-radius:26px;
+}
+input{
+    border-radius:26px;
+}
+
+img{
+    box-sizing: border-box
+    
+}
+
+/*.body-form,
+.encabezado
+{
+    margin: 0;
+    
+
+   
+}
+body{
+    background-origin: padding-box;
+    background-color:#9b97fb;
+   
+}
+div,
+ul{
+    text-align:center;
+
+}
