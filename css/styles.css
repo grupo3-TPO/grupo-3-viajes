@@ -3,6 +3,7 @@
 
 @import url(partials/navbar.css);
 @import url(partials/hero.css);
+@import url(partials/paises.css);
 
 /* Variables para los colores
 Ejemplo para usar:
@@ -43,6 +44,7 @@ body{
 }
 
 
+/*MEDIA QUERIES*/
 @media  only screen and (max-width: 1160px){
     :root{
         font-size: 14px;
