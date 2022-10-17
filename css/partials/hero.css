@@ -30,7 +30,7 @@
     animation-name: busqueda;
 }
 
- .select-icon{
+.select-icon{
     position: relative;
     right: 3em;
     color:var(--texto-900)

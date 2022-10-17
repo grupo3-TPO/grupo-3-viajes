@@ -1,0 +1,13 @@
+.lugares-destacados{
+    height: 27em;
+    width: 100%;
+    background-color: var(--white);
+
+}
+
+.cards-lg-container{
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    column-gap: 3em;
+    row-gap: 2em;
+}
