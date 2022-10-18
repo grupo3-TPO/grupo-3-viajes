@@ -1,0 +1,23 @@
+.destinos-populares{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    gap:2em;
+    place-content: center;
+    padding: 2em 0;
+
+}
+
+.img-card{
+
+}
+
+.img-container{
+    width: 360px;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.destino-img{
+    height: 150%;
+}

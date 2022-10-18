@@ -26,8 +26,9 @@
     padding: 0 2em;
     position: relative;
     transition: all 1s ease-in;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-name: busqueda;
+   
 }
 
 .select-icon{

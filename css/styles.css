@@ -53,11 +53,13 @@ body{
     :root{
         font-size: 14px;
     }
+    
 }
 
-@media  only screen and (max-width: 800px){
+@media  only screen and (max-width: 811px){
    
     :root{
         font-size: 12px;
     }
+    
 }

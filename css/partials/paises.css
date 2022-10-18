@@ -1,6 +1,7 @@
 .container{
     margin: 0 auto;
     max-width: 71em;
+    
 }
 
 .header-paises{
@@ -42,6 +43,7 @@
     grid-template-columns: repeat(auto-fit, 180px);
     column-gap: 3em;
     row-gap: 2em;
+    place-content: center;
 }
 
 /*CARD*/

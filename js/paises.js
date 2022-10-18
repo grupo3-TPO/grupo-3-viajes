@@ -1,5 +1,3 @@
-import KEY from "../config";
-
 // CONECTANDO A LA API
 //https://rapidapi.com/HybridWebs/api/countries-states-cities-dataset/
 let cards = document.querySelector(".cards");
@@ -7,7 +5,7 @@ let filtroContinentes = document.querySelector(".region-select");
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": KEY,
+    "X-RapidAPI-Key": "f02373db41mshe152ce5ec374f30p1854e1jsnd2bdb8bfab44",
     "X-RapidAPI-Host": "countries-states-cities-dataset.p.rapidapi.com",
   },
 };
