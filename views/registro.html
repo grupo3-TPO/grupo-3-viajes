@@ -8,14 +8,15 @@
     <title>registro</title>
 </head>
 <body>
+    
    <header class="encabezado">
     <h2>¡REGISTRATE!</h2>
-
     <p>Vas a poder armar todo tu viaje, guardar en favoritos, recibir descuetos exclusivos y más...</p>
    </header>
+   
    <section class="registrarse">
     
-        <form action="" method="get">
+        <form id="form" action="" method="get">
     
            <label class="tag">Nombre:    </label>
            <input class="controls" type="text" id="nombre" placeholder="Ingrese su nombre.." name="nombre">
@@ -39,14 +40,23 @@
         
    
  
-   <input class="botton" type="submit" value="cancelar"> 
-  <input class="botton" type="submit" value="Registrarse">
+   <input class="botton" type="submit" id="submit" value="cancelar"> 
+  <input class="botton" type="submit" id="submit" value="Registrarse">
     
     <p> <a href="#">¿Ya tengo cuenta?</a></p>
 </form>
 </section>
 
+<div class="contenedor-principal">
+<div class="image-cont-one">
+<img src="../assets/form1.png" id="foto1">
+</div>
+<div class="image-cont">
+<img src="../assets/form2.png" id="foto2">
+</div>
+</div>
 
- <script></script>
+<script src="app.js"></script>
+ <script src="/js/registro.js"></script>
 </body>
 </html>
