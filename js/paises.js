@@ -32,43 +32,40 @@ async function getCountries() {
   console.log(countries);
 
   countries.forEach(function (country) {
-    let content = `<article class="country-card-container">
-                <header class="country-card-header">
-                    <h6 class="country-card-title">${
-                      country.emoji + "<br>" + country.translations[0].es
-                    }</h6>
-                </header>
-                <section class="country-card-content">
-                    <ul class="country-card-data">
-                        <li class="country-card-data-item">
-                           <i class="fa-solid fa-location-dot location-icon"></i>
-                            <p class="country-card-continent">${
-                              country.region
-                            }</p> 
-                        </li>
-                        <li class="country-card-data-item">
-                            
-                            <p class="country-card-data-item-title">Capital:</p>
-                            <p class="country-card-language">${
-                              country.capital
-                            }</p>
-                        </li>
-                        <li class="country-card-data-item">  
-                            
-                            <p class="country-card-data-item-title">Zona horaria:</p>
-                            <p class="country-card-time">${
-                              country.timezones[0].gmtOffsetName
-                            }</p>
-                        </li>
-                        <li class="country-card-data-item">  
-                            <p class="country-card-data-item-title">Moneda:</p>
-                            <p class="country-card-money">${
-                              country.currency + " " + country.currency_symbol
-                            }</p>
-                        </li>
-                    </ul> 
-                </section> 
-            </article>
+    let content = `
+      <article class="country-card-container">
+          <header class="country-card-header">
+              <h6 class="country-card-title">${
+                country.emoji + "<br>" + country.translations[0].es
+              }</h6>
+          </header>
+          <section class="country-card-content">
+              <ul class="country-card-data">
+                  <li class="country-card-data-item">
+                      <i class="fa-solid fa-location-dot location-icon"></i>
+                      <p class="country-card-continent">${country.region}</p> 
+                  </li>
+                  <li class="country-card-data-item">
+                      
+                      <p class="country-card-data-item-title">Capital:</p>
+                      <p class="country-card-language">${country.capital}</p>
+                  </li>
+                  <li class="country-card-data-item">  
+                      
+                      <p class="country-card-data-item-title">Zona horaria:</p>
+                      <p class="country-card-time">${
+                        country.timezones[0].gmtOffsetName
+                      }</p>
+                  </li>
+                  <li class="country-card-data-item">  
+                      <p class="country-card-data-item-title">Moneda:</p>
+                      <p class="country-card-money">${
+                        country.currency + " " + country.currency_symbol
+                      }</p>
+                  </li>
+              </ul> 
+          </section> 
+      </article>
     `;
 
     show();
