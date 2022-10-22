@@ -2,10 +2,11 @@
 //https://rapidapi.com/HybridWebs/api/countries-states-cities-dataset/
 let cards = document.querySelector(".cards");
 let filtroContinentes = document.querySelector(".region-select");
+
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": "b61f9e325bmshcb0ecf1592d94e1p1f0801jsneeaf2e8bf78e",
+    "X-RapidAPI-Key": "f02373db41mshe152ce5ec374f30p1854e1jsnd2bdb8bfab44",
     "X-RapidAPI-Host": "countries-states-cities-dataset.p.rapidapi.com",
   },
 };
@@ -16,27 +17,29 @@ setInterval(getValue, 100);
 
 function getValue() {
   filtroContinentes = document.querySelector(".region-select").value;
-  console.log(filtroContinentes);
 }
 
 getCountries();
 
 async function getCountries() {
   const res = await fetch(
-    "https://countries-states-cities-dataset.p.rapidapi.com/list-countries",
+    `https://countries-states-cities-dataset.p.rapidapi.com/list-countries?page=${pagina}`,
     options
   );
 
   const data = await res.json();
-  const countries = data.data.result.data;
-  console.log(countries);
+  let countries = data.data.result.data;
+  console.log(data);
 
   countries.forEach(function (country) {
     let content = `<article class="country-card-container">
                 <header class="country-card-header">
-                    <h6 class="country-card-title">${
-                      country.emoji + "<br>" + country.translations[0].es
-                    }</h6>
+                    <h6 class="country-card-title"><a href="/views/${country.translations[0].es.replaceAll(
+                      " ",
+                      ""
+                    )}.html">${
+      country.emoji + "<br>" + country.translations[0].es
+    }</a></h6>
                 </header>
                 <section class="country-card-content">
                     <ul class="country-card-data">
@@ -82,6 +85,11 @@ async function getCountries() {
       }
     }
   });
+}
+
+for (let i = 1; i < 26; i++) {
+  pagina = i;
+  getCountries();
 }
 
 // async function getCountries() {
