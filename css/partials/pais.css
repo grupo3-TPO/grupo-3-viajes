@@ -1,0 +1,33 @@
+.pais-header{
+    width: 100%;
+    height: 32em;
+    padding-top: 10em 0;
+    
+}
+
+.pais-title-container{
+    max-width: 71em;   
+
+}
+.pais-title{
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 4em;
+    letter-spacing: .1em;
+    padding-top: 6em;
+}
+
+.egipto{
+    background-image: url('/assets/egipto-lugares-cairo-2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.pais-lugares-container{
+    width: 100%;
+}
+.pais-descripcion{
+    width: 60%;
+    margin:2em 0;
+    font-size: 1.25em;
+}
