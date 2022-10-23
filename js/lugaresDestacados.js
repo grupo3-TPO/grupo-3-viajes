@@ -56,20 +56,19 @@ lugares.forEach(function (lugar) {
       <div class="bg-img">
         <img src="${lugar.imgUrl}" alt="${lugar.lugar}" />
       </div>
-      <div class="card-lg-s1">
-        <p class="card-lg-pais">${lugar.pais}</p>
-        <section class="puntaje">
-            <p class="card-puntaje">${lugar.puntaje}</p>
-            <i class="fa-solid fa-star card-puntaje-icon"></i>
-        </section>
+      <div class="card-info">
+        <div class="card-lg-s1">
+          <p class="card-lg-pais">${lugar.pais}</p>
+          <section class="puntaje">
+              <p class="card-puntaje">${lugar.puntaje}</p>
+              <i class="fa-solid fa-star card-puntaje-icon"></i>
+          </section>
+        </div>
+        <header class="card-lg-header">
+            <i class="fa-solid fa-location-dot card-lg-location-icon"></i>
+            <h6 class="card-lg-title">${lugar.lugar}</h6>
+        </header>
       </div>
-      
-
-      <header class="card-lg-header">
-          <i class="fa-solid fa-location-dot card-lg-location-icon"></i>
-          <h6 class="card-lg-title">${lugar.lugar}</h6>
-          
-      </header>
     </article>
 `;
   cardsContainer.insertAdjacentHTML("beforeend", content);
@@ -81,7 +80,8 @@ destinos.forEach(function (destino) {
       <div class="img-container">
         <img src="${destino.url}" alt="" class="destino-img" />
       </div>
-      <h5 class="destino-title">${destino.nombre}</h5>
+      <div class="title-container"><h5 class="destino-title">${destino.nombre}</h5></div>
+      
     </article>
   `;
   destinosPopulares.insertAdjacentHTML("beforeend", content);
