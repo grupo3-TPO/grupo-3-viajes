@@ -26,7 +26,7 @@ const destinos = [
     url: "../assets/destinos-pop-colombia.jpg",
   },
   {
-    nombre: "Corea",
+    nombre: "Corea del Sur",
     url: "../assets/destino-pop-corea.jpg",
   },
   {
@@ -80,7 +80,11 @@ destinos.forEach(function (destino) {
       <div class="img-container">
         <img src="${destino.url}" alt="" class="destino-img" />
       </div>
-      <div class="title-container"><h5 class="destino-title">${destino.nombre}</h5></div>
+      <a href="/views/${destino.nombre.replaceAll(" ", "")}.html">
+        <div class="title-container"><h5 class="destino-title">${
+          destino.nombre
+        }</h5></div>
+      </a>
       
     </article>
   `;
