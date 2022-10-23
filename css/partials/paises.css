@@ -1,7 +1,9 @@
 .container{
     margin: 0 auto;
     max-width: 71em;
+    
 }
+
 
 .header-paises{
     display: flex;
@@ -35,12 +37,15 @@
     border-color: var(--secundario-500);
     outline: var(--secundario-500);
 }
+
 /* CARDS GRID*/
 .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, 180px);
     column-gap: 3em;
     row-gap: 2em;
+    place-content: center;
+    padding: 0 0 2.5em 0;
 }
 
 /*CARD*/

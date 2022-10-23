@@ -4,6 +4,11 @@
 @import url(partials/navbar.css);
 @import url(partials/hero.css);
 @import url(partials/paises.css);
+@import url(partials/sobreNos.css);
+@import url(partials/lugaresDest.css);
+@import url(partials/newsletter.css);
+@import url(partials/destinosPop.css);
+@import url(partials/footer.css);
 
 /* Variables para los colores
 Ejemplo para usar:
@@ -49,11 +54,13 @@ body{
     :root{
         font-size: 14px;
     }
+    
 }
 
-@media  only screen and (max-width: 800px){
+@media  only screen and (max-width: 811px){
    
     :root{
         font-size: 12px;
     }
+    
 }
