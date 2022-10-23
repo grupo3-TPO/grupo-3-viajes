@@ -92,32 +92,4 @@ for (let i = 1; i < 26; i++) {
   getCountries();
 }
 
-// async function getCountries() {
-//   const res = await fetch(
-//     "https://countries-states-cities-dataset.p.rapidapi.com/list-countries",
-//     options
-//   );
-
-//   const data = await res.json();
-//   let countriesList = data.data.result.data;
-
-//   console.log(countriesList);
-
-//   console.log(data);
-//   console.log(data.data.result.next_page_url);
-
-//   const res2 = await fetch(
-//     "https://countries-states-cities-dataset.p.rapidapi.com/list-countries?page=2",
-//     options
-//   );
-
-//   const data2 = await res2.json();
-//   let countriesList2 = data2.data.result.data;
-
-//   console.log(countriesList2);
-// }
-
-//***************************** /
-//###########################
-
 // location.assign(`http://example.com/#${location.pathname}`)
