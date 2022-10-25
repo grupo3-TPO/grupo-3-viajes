@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: space-around;
     gap: .5em;
-    
+    height: 18.75em;
     width: 21em;  
     transition: all .5s;
     cursor: pointer;
@@ -48,8 +48,6 @@
 }
 .bg-img{
     height: 12.5em;
-    
-    
     overflow: hidden;
     border-radius: 1.562em 1.562em 0 0;
     display: flex;
@@ -58,6 +56,7 @@
 
 .bg-img img{
     height: 120%;
+    width: 100%;
 }
 
 .card-lg-header{
@@ -75,7 +74,7 @@
 }
 
 .card-info{
-    padding: 0 2em 1.5em 2em;
+    padding: 0 1em 1.5em 1em;
 }
 .titulo-seccion{
     text-transform: uppercase;

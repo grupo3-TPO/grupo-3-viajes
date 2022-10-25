@@ -23,6 +23,16 @@
     background-size: cover;
 }
 
+.pais-actividades-container{
+    display: flex;
+    width: 100%;
+    margin-top: 3em;
+    
+}
+.pais-actividades{
+    width: 80%;
+    padding: 0;
+}
 .pais-lugares-container{
     width: 100%;
 }
@@ -30,4 +40,41 @@
     width: 60%;
     margin:2em 0;
     font-size: 1.25em;
+}
+
+.card-md{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: .3em;
+    width: 22.5em;  
+    transition: all .5s;
+    cursor: pointer;
+    border-radius: 1.562em;
+    background-color: #fff;
+
+}
+.actividad-titulo{
+    width: 30%;
+}
+.card-md-descripcion{
+    font-size: .8em;
+}
+
+.card-md-tag{
+    font-size: 12px;
+}
+.card-contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-md-title{
+    font-size: 1.2em;
+    text-decoration: underline;
+    color: var(--texto-500);
+}
+
+.card-md-ubicacion{
+    color: var(--texto-100);
 }
