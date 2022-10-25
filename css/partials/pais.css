@@ -22,7 +22,12 @@
     background-position: center;
     background-size: cover;
 }
-
+.estadosUnidos{
+        background-image: url('/assets/imagenesEEUU/estados-unidos-general.jpg');
+        background-position: center;
+        background-size: cover;
+  
+}
 .pais-actividades-container{
     display: flex;
     width: 100%;
