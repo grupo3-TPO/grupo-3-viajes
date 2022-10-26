@@ -2,13 +2,14 @@
     width: 100%;
     height: 32em;
     padding-top: 10em 0;
-    
+
 }
 
 .pais-title-container{
     max-width: 71em;   
 
 }
+
 .pais-title{
     text-transform: uppercase;
     color: var(--white);
@@ -47,6 +48,14 @@
     font-size: 1.25em;
 }
 
+.cards-md-container-pais-actividades{
+    width: 80%;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .card-md{
     display: flex;
     flex-direction: column;
@@ -82,4 +91,9 @@
 
 .card-md-ubicacion{
     color: var(--texto-100);
+}
+
+.lugares-titulo, .actividad-titulo{
+    color: var(--texto-500);
+
 }

@@ -74,7 +74,9 @@ const actividades = [
 ];
 
 const paisLugares = document.querySelector(".pais-lugares");
-const paisActividades = document.querySelector(".pais-actividades");
+const paisActividades = document.querySelector(
+  ".cards-md-container-pais-actividades"
+);
 
 lugares.forEach(function (lugar) {
   let content = `
@@ -116,7 +118,7 @@ actividades.forEach(function (actividad) {
     </header>
     <div class="card-contact">
       <p class="card-md-ubicacion">${actividad.ubicacion}</p>
-      <a href="${actividad.web}"><i class="fa-solid fa-globe"></i></a>
+      <a href="${actividad.web}" target="_blank"><i class="fa-solid fa-globe"></i></a>
     </div>
     <iframe src="${actividad.mapa}"  width="100%" height="138" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
