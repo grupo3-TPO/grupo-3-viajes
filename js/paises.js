@@ -1,5 +1,52 @@
 // CONECTANDO A LA API
 //https://rapidapi.com/HybridWebs/api/countries-states-cities-dataset/
+const listaPaises = [
+  "Alemania",
+  "Andorra",
+  "Antigua y Barbuda",
+  "Argentina",
+  "Australia",
+  "Austria",
+  "Bélgica",
+  "Brasil",
+  "Bulgaria",
+  "Cabo Verde",
+  "Camboya",
+  "Canadá",
+  "Colombia",
+  "Corea del Sur",
+  "Costa Rica",
+  "Croacia",
+  "Egipto",
+  "España",
+  "Estados Unidos",
+  "Finlandia",
+  "Fiyi",
+  "Francia",
+  "Grecia",
+  "Guatemala",
+  "Hong Kong",
+  "India",
+  "Indonesia",
+  "Irlanda",
+  "Islandia",
+  "Italia",
+  "Jamaica",
+  "Japón",
+  "Nepal",
+  "Noruega",
+  "Nueva Zelanda",
+  "Perú",
+  "Portugal",
+  "Puerto Rico",
+  "República de Sudáfrica",
+  "Samoa Americana",
+  "Sierra Leone",
+  "Singapur",
+  "Tailandia",
+  "Turquía",
+  "Tuvalu",
+];
 let cards = document.querySelector(".cards");
 let filtroContinentes = document.querySelector(".region-select");
 
@@ -29,22 +76,24 @@ async function getCountries() {
 
   const data = await res.json();
   let countries = data.data.result.data;
-  console.log(data);
 
   countries.forEach(function (country) {
-    let content = `<article class="country-card-container">
+    if (listaPaises.indexOf(country.translations[0].es) >= 0) {
+      console.log(country.translations[0].es);
+
+      let content = `<article class="country-card-container">
                 <header class="country-card-header">
                     <h6 class="country-card-title"><a href="/views/${country.translations[0].es.replaceAll(
                       " ",
                       ""
                     )}.html">${
-      country.emoji + "<br>" + country.translations[0].es
-    }</a></h6>
+        country.emoji + "<br>" + country.translations[0].es
+      }</a></h6>
                 </header>
                 <section class="country-card-content">
                     <ul class="country-card-data">
                         <li class="country-card-data-item">
-                           <i class="fa-solid fa-location-dot location-icon"></i>
+                          <i class="fa-solid fa-location-dot location-icon"></i>
                             <p class="country-card-continent">${
                               country.region
                             }</p> 
@@ -74,14 +123,15 @@ async function getCountries() {
             </article>
     `;
 
-    show();
-    function show() {
-      if (
-        country.region == filtroContinentes ||
-        filtroContinentes == "" ||
-        filtroContinentes == "Todos"
-      ) {
-        cards.insertAdjacentHTML("beforeend", content);
+      show();
+      function show() {
+        if (
+          country.region == filtroContinentes ||
+          filtroContinentes == "" ||
+          filtroContinentes == "Todos"
+        ) {
+          cards.insertAdjacentHTML("beforeend", content);
+        }
       }
     }
   });
