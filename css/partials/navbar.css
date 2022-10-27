@@ -108,7 +108,7 @@ a{
     height: 2.9em;
     background-color: var(--secundario-500);
     padding: 1em;
-    border-radius: 0.5em;
+    border-radius:50px;
     font-weight: 600;
 }
 

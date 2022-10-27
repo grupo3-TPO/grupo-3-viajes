@@ -82,7 +82,24 @@
 
 <!-- SUSCRIPCIÓN AL NEWSLETTER -->
     <section class="newsletter">
-
+        <div class="container newsletter-container">
+            <div class="left">
+                <h3 class="newsletter-title">¡Suscribite a nuestro newsletter!</h3>
+                <p>Podrás recibir las mejores ofertas en tu bandeja de entrada, consejos de viaje de expertos y la oportunidad de ganar vacaciones.</p>
+                <form id="singular-form" class="suscribirse">
+                    <div class="input-container">
+                        <input type="text" placeholder="Ingrese su email..." id="email" class="base-select mail-input">
+                        <p class="mensaje mensaje-error">Ingrese una dirección de email válida.</p>
+                        <p class="mensaje mensaje-success">¡Suscripción exitosa!</p>
+                    </div>
+                    <button type="button" class="btn-cta-primary btn-submit" onclick="suscribirse()">Suscribirse</button>
+                </form>
+                    
+               
+            </div>
+            
+            <img src="/assets/form2.png" alt="" aria-hidden="true" class="newsletter-img">
+        </div>
     </section>
 
 <!-- DESTINOS POPULARES -->
@@ -102,6 +119,7 @@
     <script src="js/app.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/lugaresDestacados.js"></script>
+    <script src="js/newsletter.js"></script>
 
 </body>
 </html>

@@ -53,18 +53,3 @@ body{
 }
 
 
-/*MEDIA QUERIES*/
-@media  only screen and (max-width: 1160px){
-    :root{
-        font-size: 14px;
-    }
-    
-}
-
-@media  only screen and (max-width: 811px){
-   
-    :root{
-        font-size: 12px;
-    }
-    
-}
