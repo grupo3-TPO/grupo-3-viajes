@@ -72,11 +72,41 @@ const actividades = [
     img: "../assets/egipto-lugares-siwa.jpg",
   },
 ];
-
+const alojamiento = [
+  {
+    hotel: "Jaz Crystal, Almaza Bay",
+    lugarubicacion: "Mersa Matruh",
+    tg: "Hotelería",
+    horarios: "Check-in 14:00 - Check-out 12:00",
+    sitioweb: "https://www.jazhotels.com",
+    mapas:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.7766308847226!2d27.551307415023025!3d31.199206181477035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1461db48ee913f67%3A0xfb59922f813292f7!2sJaz%20Crystal%2C%20Almaza%20Bay!5e0!3m2!1ses!2sar!4v1666867444686!5m2!1ses!2sar",
+    img: "../assets/egipto-hotel-jaz-cristal.jpg",
+  },
+  {
+    hotel: "Premier Le Reve Hotel & Spa ",
+    lugarubicacion: "Hurghada",
+    tg: "Hotelería",
+    horarios: "Check-in 14:00 - Check-out 12:00",
+    sitioweb: "https://premieregypthotels.com",
+    mapas:
+      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14216.661914252454!2d33.8877167!3d27.0249365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6caddb3bb6f8b489!2sPremier%20Le%20Reve%20Hotel%20%26%20Spa%20Adult%20Only!5e0!3m2!1ses!2sar!4v1666866978269!5m2!1ses!2sar",
+    img: "../assets/egipto-hoteles-premier.jpg",
+  },
+  {
+    hotel: "Pyramids View Inn ",
+    lugarubicacion: "Guiza",
+    tg: "Hotelería",
+    horarios: "Check-in 12:00 - Check-out 11:00",
+    sitioweb: "https://www.pyramidsviewinn.com/",
+    mapas:
+      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13819.31744929577!2d31.2088526!3d30.0130557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x969a0cfe08b9b61!2sPyramids%20View%20Inn!5e0!3m2!1ses!2sar!4v1666867208177!5m2!1ses!2sar",
+    img: "../assets/egipto-hoteles-pyramids-view-inn.jpg",
+  },
+];
 const paisLugares = document.querySelector(".pais-lugares");
-const paisActividades = document.querySelector(
-  ".cards-md-container-pais-actividades"
-);
+const paisActividades = document.querySelector(".pais-actividades");
+const paisAlojamiento = document.querySelector(".pais-alojamiento");
 
 lugares.forEach(function (lugar) {
   let content = `
@@ -125,4 +155,27 @@ actividades.forEach(function (actividad) {
 </article>
   `;
   paisActividades.insertAdjacentHTML("beforeend", content);
+});
+
+alojamiento.forEach(function (alojamiento) {
+  let content = `
+  <article class="card-lm">
+  <div class="bg-img">
+    <img src="${alojamiento.img}" alt="${alojamiento.hotel}" />
+  </div>
+  <div class="card-info">
+      <p class="card-lm-tg">${alojamiento.tg}</p>
+      <p class="horarios">${alojamiento.horarios}</p>
+    <header class="card-lm-header">
+        <h6 class="card-lm-title">${alojamiento.hotel}</h6>
+    </header>
+    <div class="card-contact">
+      <p class="card-lm-lugarubicacion">${alojamiento.lugarubicacion}</p>
+      <a href="${alojamiento.sitioweb}" target="_blank"><i class="fa-solid fa-globe"></i></a>
+    </div>
+    <iframe src="${alojamiento.mapas}"  width="100%" height="138" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</article>
+  `;
+  paisAlojamiento.insertAdjacentHTML("beforeend", content);
 });

@@ -96,9 +96,7 @@
     
 }
 
-.country-card-data{
 
-}
 
 .country-card-data-item{
     display: flex;
@@ -123,7 +121,7 @@
     font-size: 12px;
 }
 
-.disabled, .disaled i{
+.disabled{
     opacity: .4;
     cursor: default;
 }
