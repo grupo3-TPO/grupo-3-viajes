@@ -72,7 +72,35 @@ const actividades = [
     img: "../assets/egipto-lugares-siwa.jpg",
   },
 ];
-
+const alojamiento = [
+  {
+    hotel: "Paramount Hotel Times Square",
+    lugarubicacion: "New york",
+    tg: "Hoteleria",
+    horarios: "check in 8a.m checkut 10am",
+    sitioweb: "https://www.nycparamount.com/?utm_source=google-my-business&utm_medium=organic&utm_campaign=hotel-paramount",
+    mapas: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.113197018349!2d-73.98919748459356!3d40.759534979326794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258543f40379b%3A0xae966f416e2d9099!2sHotel%20Paramount!5e0!3m2!1ses-419!2sar!4v1666820777589!5m2!1ses-419!2sar",
+    img:"../assets/imagenesEEUU/Hotel-Paramount.jpg",
+  },
+  {
+    hotel: "Oceanside ",
+    lugarubicacion: "Miami bech",
+    tg: "Hoteleria",
+    horarios: "check-in 8a.m check-uot 10am",
+    sitioweb: "https://oceansidehotelmiamibeach.com/",
+    mapas: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.7704512871137!2d-80.12339398497733!3d25.844108283599507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b31f8cc813db%3A0xc19fb9dede63ad0b!2sOceanside%20Hotel%20%2B%20Suites!5e0!3m2!1ses-419!2sar!4v1666838175237!5m2!1ses-419!2sar",
+    img:"../assets/imagenesEEUU/oceanside.jpg",
+  },
+  {
+    hotel: "La Adventure ",
+    lugarubicacion: "California",
+    tg: "Hoteleria",
+    horarios: "check-in 8a.m check-uot 10am",
+    sitioweb: "https://www.laadventureinglewood.com/",
+    mapas: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.8418121346313!2d-118.35104878478784!3d33.945196480635246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b6f662124b5b%3A0xf603e4404cad7931!2sLA%20Adventure%20Hotel!5e0!3m2!1ses-419!2sar!4v1666838758014!5m2!1ses-419!2sar",
+    img:"../assets/imagenesEEUU/budget-hotel-in-inglewood.jpg",
+  },
+];
 const paisLugares = document.querySelector(".pais-lugares");
 const paisActividades = document.querySelector(".pais-actividades-container");
 
@@ -124,3 +152,4 @@ actividades.forEach(function (actividad) {
   `;
   paisActividades.insertAdjacentHTML("beforeend", content);
 });
+

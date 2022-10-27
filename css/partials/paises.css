@@ -120,3 +120,7 @@
 .country-card-language, .country-card-time, .country-card-money{
     font-size: 12px;
 }
+.disabled, .disaled i{
+    opacity: .4;
+    cursor: default;
+}
