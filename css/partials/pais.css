@@ -23,18 +23,19 @@
     background-size: cover;
 }
 .estadosUnidos{
-        background-image: url('/assets/imagenesEEUU/estados-unidos-general.jpg');
+        background-image: url('/assets/imagenesEEUU/estados\ unidos\ portada.jpg');
         background-position: center;
         background-size: cover;
   
 }
-.pais-actividades-container{
+
+.pais-actividades-container {
     display: flex;
     width: 100%;
     margin-top: 3em;
     
 }
-.pais-actividades{
+.pais-actividades {
     width: 80%;
     padding: 0;
 }
@@ -47,6 +48,16 @@
     font-size: 1.25em;
 }
 
+.pais-alojamiento-container {
+    display: flex;
+    width: 100%;
+    margin-top: 3em;
+    
+}
+.pais-alojamiento{
+    width: 80%;
+    padding: 0;
+}
 .card-md{
     display: flex;
     flex-direction: column;
@@ -59,11 +70,20 @@
     background-color: #fff;
 
 }
-.actividad-titulo{
+.actividad-titulo {
     width: 30%;
 }
+
 .card-md-descripcion{
     font-size: .8em;
+}
+.cards-md-container-pais-actividades {
+   width:80%;
+   flex-direction:row;
+   display:flex;
+   flex-wrap:wrap;
+   justify-content:space-around;
+
 }
 
 .card-md-tag{

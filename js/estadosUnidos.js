@@ -56,7 +56,7 @@ const lugares = [
       horario: "10:00 AM - 5:00 PM",
       web: "https://www.amnh.org/",
       mapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.122358691297!2d-73.97617688459295!3d40.78132407932437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f4b00f7a09%3A0xa27d8172624c5db1!2sMuseo%20Americano%20de%20Historia%20Natural!5e0!3m2!1ses-419!2sar!4v1666670552763!5m2!1ses-419!2sar",
-      img: "../assets/imagenesEEUU/Museo de Historia Natural.jpg>",
+      img: "../assets/imagenesEEUU/Museo de historia.jpg",
     },
     {
       titulo: "Miami Crandon Park Beach.",
@@ -68,9 +68,23 @@ const lugares = [
       img: "../assets/imagenesEEUU/cranton beach.jpg",
     },
   ];
+  const alojamiento = [
+    {
+      titulo: "Paramount Hotel Times Square",
+      ubicacion: "New york",
+      tags: "Hoteleria",
+      horario: "Todo el día",
+      web: "https://www.nycparamount.com/?utm_source=google-my-business&utm_medium=organic&utm_campaign=hotel-paramount",
+      mapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.113197018349!2d-73.98919748459356!3d40.759534979326794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258543f40379b%3A0xae966f416e2d9099!2sHotel%20Paramount!5e0!3m2!1ses-419!2sar!4v1666820777589!5m2!1ses-419!2sar",
+      img:"../assets/imagenesEEUU/Hotel-Paramount.jpg",
+    },
+  ]
   
   const paisLugares = document.querySelector(".pais-lugares");
-  const paisActividades = document.querySelector(".pais-actividades");
+  const paisActividades = document.querySelector(
+    ".cards-md-container-pais-actividades"
+  );
+  const paisAlojamiento = document.querySelector(".card-md-container-alojamiento");
   
   lugares.forEach(function (lugar) {
     let content = `
@@ -112,7 +126,7 @@ const lugares = [
       </header>
       <div class="card-contact">
         <p class="card-md-ubicacion">${actividad.ubicacion}</p>
-        <a href="${actividad.web}"><i class="fa-solid fa-globe"></i></a>
+        <a href="${actividad.web}" target="_blank"><i class="fa-solid fa-globe"></i></a>
       </div>
       <iframe src="${actividad.mapa}"  width="100%" height="138" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
@@ -120,3 +134,6 @@ const lugares = [
     `;
     paisActividades.insertAdjacentHTML("beforeend", content);
   });
+
+
+ 

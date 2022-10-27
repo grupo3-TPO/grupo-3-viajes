@@ -74,7 +74,7 @@ const actividades = [
 ];
 
 const paisLugares = document.querySelector(".pais-lugares");
-const paisActividades = document.querySelector(".pais-actividades");
+const paisActividades = document.querySelector(".pais-actividades-container");
 
 lugares.forEach(function (lugar) {
   let content = `
