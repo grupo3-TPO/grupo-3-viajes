@@ -54,3 +54,13 @@
     color: var(--white);
     font-size: 25px;
 }
+
+/*MEDIA QUERIES*/
+@media  only screen and (max-width: 1160px){
+    .title-container{
+        
+        opacity: 1;
+        background-color: transparent;
+        
+    }
+}

@@ -17,10 +17,10 @@
     font-size: 3em;
     font-weight: 600;
     color: var(--texto-500);
+    min-width: 288px;
 }
 
 .header-paises select{
-    width: 25%;
     color: var(--texto-100);
 }
 
@@ -32,10 +32,17 @@
 .header-paises .base-select{
     padding: .5em;
 }
-
+.paises-filtros{
+    display: flex;
+   
+}
 .paises-filtros input:focus, .paises-filtros select:focus{
     border-color: var(--secundario-500);
     outline: var(--secundario-500);
+}
+
+.header-paises .region-select{
+    padding-right: 20px;
 }
 
 /* CARDS GRID*/
@@ -124,4 +131,40 @@
 .disabled{
     opacity: .4;
     cursor: default;
+}
+
+/*MEDIA QUERIES*/
+@media  only screen and (max-width: 1160px){
+    .cards{
+        margin-top: 5em;
+    }
+    
+}
+
+
+@media only screen and (max-width:924px){
+    .paises-filtros{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .cards{
+        margin-top: 12em;
+    }
+    .region-select{
+        width: 25%;
+    }
+}
+
+@media  only screen and (max-width: 809px){
+    .cards{
+        margin-top: 15em;
+    }
+    .header-paises h2{
+        font-size: 2.75em;
+    }
+    
+    .region-select{
+        width: 70%;
+    }
 }
