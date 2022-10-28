@@ -1,5 +1,5 @@
  const footer = document.querySelector(".footer");
-const content = `
+const contentfootter = `
 <div class="redes-container">
 <ul>
  <li><a href="#" class ="facebook"><i class="fab fa-facebook-f"></i></a></li>
@@ -11,4 +11,4 @@ const content = `
 
 
 `;
-footer.innerHTML = content;
+footer.innerHTML = contentfooter;
