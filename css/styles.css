@@ -37,6 +37,12 @@ h1{
     --white: #F6F7F9;
     font-size: 16px;
 }
+:root{
+    --facebook:#3b5999;
+    --instagram:#e4405f;
+    --twitter:#55acee;
+    --pinterest:#007785;  
+}
 
 * {
     margin: 0;
