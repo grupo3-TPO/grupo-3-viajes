@@ -34,6 +34,11 @@
         background-position: center;
         background-size: cover;
 }
+.coreaDelSur{
+    background-image: url('/assets/imagenesEEUU/estados\ unidos\ portada.jpg'); /*cambiar por imagen de corea*/
+        background-position: center;
+        background-size: cover;
+}
 
 /* ACTIVIDADES */
 .pais-actividades-container {

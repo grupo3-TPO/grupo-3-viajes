@@ -5,12 +5,7 @@ const lugares = [
     raiting: "4.8",
     img: "../assets/egipto-lugares-dahab.jpg",
   },
-  // {
-  //   nombre: "El Cairo",
-  //   tags: "Ciudades - Históricos",
-  //   raiting: "4.7",
-  //   img: "../assets/egipto-lugares-cairo-1.jpg",
-  // },
+
   {
     nombre: "Siwa",
     tags: "Oasis - Ruinas",
@@ -74,34 +69,31 @@ const actividades = [
 ];
 const alojamiento = [
   {
-    hotel: "Jaz Crystal, Almaza Bay",
-    lugarubicacion: "Mersa Matruh",
+    hotel: "Crown Parkhotel",
+    lugarubicacion: "Seul",
     tg: "Hotelería",
     horarios: "Check-in 14:00 - Check-out 12:00",
-    sitioweb: "https://www.jazhotels.com",
-    mapas:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.7766308847226!2d27.551307415023025!3d31.199206181477035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1461db48ee913f67%3A0xfb59922f813292f7!2sJaz%20Crystal%2C%20Almaza%20Bay!5e0!3m2!1ses!2sar!4v1666867444686!5m2!1ses!2sar",
-    img: "../assets/egipto-hotel-jaz-cristal.jpg",
+    sitioweb: "https://www.crownparkhotel.co.kr/",
+    mapas:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5216758509887!2d-74.13809648523767!3d4.678997196601329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c8fdfe3c89f%3A0x4cd044081919640c!2sCrown%20Park%20Hotel!5e0!3m2!1ses-419!2sar!4v1667335873757!5m2!1ses-419!2sar",
+    img: "../assets/corea/crown.jpg",
   },
   {
-    hotel: "Premier Le Reve Hotel & Spa ",
-    lugarubicacion: "Hurghada",
+    hotel: "Line Hotel",
+    lugarubicacion: "Myeongdong",
     tg: "Hotelería",
     horarios: "Check-in 14:00 - Check-out 12:00",
-    sitioweb: "https://premieregypthotels.com",
-    mapas:
-      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14216.661914252454!2d33.8877167!3d27.0249365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6caddb3bb6f8b489!2sPremier%20Le%20Reve%20Hotel%20%26%20Spa%20Adult%20Only!5e0!3m2!1ses!2sar!4v1666866978269!5m2!1ses!2sar",
-    img: "../assets/egipto-hoteles-premier.jpg",
+    sitioweb: "http://www.line-hotel.co.kr/",
+    mapas:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.5643335347736!2d126.98148541531155!3d37.56532697979816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3ff912c6661%3A0x4fd98501a3c8630e!2sLINE%20HOTEL%20MYEONGDONG!5e0!3m2!1ses-419!2sar!4v1667336529553!5m2!1ses-419!2sar",
+    img: "../assets/corea/line-hotel.jpg",
   },
   {
-    hotel: "Pyramids View Inn ",
-    lugarubicacion: "Guiza",
+    hotel: "Fairfield by Marriot",
+    lugarubicacion: "Yeongdeungpo-Seul",
     tg: "Hotelería",
     horarios: "Check-in 12:00 - Check-out 11:00",
-    sitioweb: "https://www.pyramidsviewinn.com/",
-    mapas:
-      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13819.31744929577!2d31.2088526!3d30.0130557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x969a0cfe08b9b61!2sPyramids%20View%20Inn!5e0!3m2!1ses!2sar!4v1666867208177!5m2!1ses!2sar",
-    img: "../assets/egipto-hoteles-pyramids-view-inn.jpg",
+    sitioweb: "https://www.marriott.com/en-us/hotels/selfi-fairfield-by-marriott-seoul/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0",
+    mapas:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.616044585625!2d126.90697031531022!3d37.51697297980715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9f42459b69d3%3A0x47d827bc05d70773!2sFairfield%20by%20Marriott%20Seoul!5e0!3m2!1ses-419!2sar!4v1667337018369!5m2!1ses-419!2sar",
+    img: "../assets/corea/marriot.jpg",
   },
 ];
 const paisLugares = document.querySelector(".pais-lugares");
