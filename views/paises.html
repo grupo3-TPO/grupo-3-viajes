@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pura Vida Viajes</title>
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+    </nav>
+
+    <main class="container ">
+        <header class="header-paises">
+            <h2>¡Explorá los paises alrededor del mundo!</h2>
+            <div class="paises-filtros">
+                <div class="buscar">
+                    <input type="text" placeholder="Buscar por país" class="base-select disabled" disabled>
+                    <i class="fa-solid fa-magnifying-glass select-icon disabled"></i>  
+                </div>
+                <div class="filtrar">
+                    <select name="filtrar-continente" id="filtrar-continente" class="region-select base-select " onchange= location.reload() >
+                        <option value='' disabled selected>Filtrar por región</option>
+                        <option value="Africa"> África</option>
+                        <option value="Americas">América</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe"> Europa</option>
+                        <option value="Oceania">Oceanía</option>
+                        <option value="Todos">Ver Todos</option>
+                    </select>
+                    <i class="fa-solid fa-filter select-icon"></i>
+                </div>
+                 
+            </div>
+           
+        </header>
+
+        <div class="cards">
+
+        </div>
+        
+      
+    </main>
+
+    <footer class="footer"></footer>
+
+
+    
+
+  
+    <script src="../js/app.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script  src="../js/paises.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

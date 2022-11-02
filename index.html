@@ -5,56 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pura Vida Viajes</title>
+
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+    <!--ESTILOS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https : //usep.fontawesome.com/releases/v5.8.1/css/allá.css" integrity="sha384-50oBUHEmvQ+1lW4y57PFTmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymuos">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-content">
-            <a href="index.html"><img src="assets/logo.png" alt="" class="logo"></a>
-            
-            <ul class="main-navigation hidden ">
-                <li>
-                    <p class="dropdown-label">Paises<i class="fa-solid fa-chevron-down dropdown-icon"></i></p>
-                    
-                    <ul class="dropdown hidden">
-                        <p class="label-continentes">Ver por continentes</p>
-                        <menu class="menu-continentes">
-                            <li>América</li>
-                            <li>África</li>
-                            <li>Asia</li>
-                            <li>Europa</li>
-                            <li>Oceanía</li>
-                        </menu>
-                        <li><a href="/views/paises.html">Ver todos</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Actividades</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <menu class="account-menu">
-                <li><a href="#">Ingresar</a></li>
-                <li><a href="views/registro.html" class="btn-cta-primary">Registro</a></li>
-            </menu>
-            <i class="fa-solid fa-bars  hamburguer-menu"></i>
-        </div>  
-    </nav>
-
-
+    
+<!-- NAVBAR - MENU -->
+    <nav class="navbar"></nav>
+    
+<!-- HERO -->
     <header>
         <div class="hero">
-            <select name="busqueda-paises" id="busqueda-pais" class="busqueda-select" >
+            <select name="busqueda-paises" id="busqueda-pais" class="base-select busqueda-select" >
                 <option value='' disabled selected>Buscar por país</option>
                 <option value="corea-del-sur"> Corea del Sur</option>
                 <option value="estados-unidos">Estados Unidos</option>
                 <option value="egipto">Egipto</option>
             </select>
-            <i class="fa-solid fa-magnifying-glass busqueda-icon"></i>
+            <i class="fa-solid fa-magnifying-glass select-icon"></i>
         </div>
     </header>
 
+<!-- SOBRE NOSOTROS -->
+    <section class="sobre-nosotros">
+       <div class="container sobre-container">
+        <section class="sobre-left">
+            <h6 class="sobre-seccion-titulo">•Sobre nosotros•</h6>
+            <h4 class= 'sobre-titulo'>Recomendamos los mejores destinos cada semana.</h4>
+            <p class="sobre-texto">Elige el destino de tus sueños, aquí te brindamos una gran cantidad de opciones y te ofrecemos las mejores recomendaciones cada semana.</p>
+            <div class="tags">
+                <section>
+                    <p class="tag-title">900+</p>
+                    <p class="tag-text">Viajeros</p>
+                </section>
+                <section>
+                    <p class="tag-title">200+</p>
+                    <p class="tag-text">Destinos</p>
+                </section>
+                <section>
+                    <p class="tag-title">1000+</p>
+                    <p class="tag-text">Actividades</p>
+                </section>        
+            </div>
+       </section>
+       <div class="sobre-img"></div>
+       </div>
+    </section>
+
+<!-- LUGARES DESTACADOS -->
+    <section class="lugares-destacados">
+        <div class="container">
+            <div class="lugares-titulo">
+                <h3 class="titulo-seccion">Lugares destacados</h3>
+                <a href="#">Ver todos</a>    
+            </div> 
+            <div class="cards-lg-container"></div>     
+        </div>
+    </section>
+
+<!-- SUSCRIPCIÓN AL NEWSLETTER -->
+    <section class="newsletter">
+        <div class="container newsletter-container">
+            <div class="left">
+                <h3 class="newsletter-title">¡Suscribite al newsletter!</h3>
+                <p>Podrás recibir las mejores ofertas en tu bandeja de entrada, consejos de viaje de expertos y la oportunidad de ganar vacaciones.</p>
+                <form id="singular-form" class="suscribirse">
+                    <div class="input-container">
+                        <input type="text" placeholder="Ingrese su email..." id="email" class="base-select mail-input">
+                        <p class="mensaje mensaje-error">Ingrese una dirección de email válida.</p>
+                        <p class="mensaje mensaje-success">¡Suscripción exitosa!</p>
+                    </div>
+                    <button type="button" class="btn-cta-primary btn-submit" onclick="suscribirse()">Suscribirse</button>
+                </form>    
+            </div>
+            <img src="/assets/form2.png" alt="" aria-hidden="true" class="newsletter-img">
+        </div>
+    </section>
+
+<!-- DESTINOS POPULARES -->
+    <section class="destinos">
+        <div class="container">
+            <h3 class="titulo-seccion">Destinos populares</h3>
+            <div class="destinos-populares"></div>
+        </div>
+    </section>
+
+<!-- FOOTER -->
+    <footer class="footer"></footer>
+   
   
+<!-- ARCHIVOS JS -->
     <script src="js/app.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/lugaresDestacados.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/footer.js"></script>
+
 </body>
 </html>

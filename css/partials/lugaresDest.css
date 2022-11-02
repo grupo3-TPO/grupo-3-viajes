@@ -1,0 +1,99 @@
+.lugares-destacados{
+    
+    width: 100%;
+    background-color: white;
+    padding: 3em 0;
+
+}
+
+.cards-lg-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20em);
+    column-gap: 3em;
+    row-gap: 2em;
+    place-content:center;
+    justify-self: end;    
+    padding: 2em 0;
+}
+
+
+.card-lg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: .5em;
+    height: 18.75em;
+    width: 21em;  
+    transition: all .5s;
+    cursor: pointer;
+    border-radius: 1.562em;
+    background-color: #fff;;
+}
+
+.card-lg:hover{
+    transform: scale(1.1);
+}
+
+.puntaje, .card-lg-header, .card-lg-s1{
+    display: flex;
+   
+}
+.card-lg-s1{
+    justify-content: space-between;
+}
+
+.puntaje i{
+    font-size: .8em;
+    
+}
+.bg-img{
+    height: 12.5em;
+    overflow: hidden;
+    border-radius: 1.562em 1.562em 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.bg-img img{
+    height: 120%;
+    width: 100%;
+}
+
+.card-lg-header{
+    font-size: 2em;
+    gap: .5em;
+    color: var(--primario-900);
+}
+.card-lg-pais{
+    color: var(--texto-900);
+}
+.puntaje{
+    color: var(--secundario-500);
+    align-items: center;
+    gap: .3em;
+}
+
+.card-info{
+    padding: 0 1em 1.5em 1em;
+}
+.titulo-seccion{
+    text-transform: uppercase;
+    font-size: 1.25em;
+    color: var(--texto-900);
+}
+
+.lugares-titulo{
+    display:flex ;
+    gap: 2em;
+    align-items: center;
+}
+
+.lugares-titulo a{
+    color: var(--texto-500);
+    text-decoration: underline;
+    font-size: 0.875em
+}
+
+.lugares-titulo a:hover{
+    color: var(--texto-100);
+}

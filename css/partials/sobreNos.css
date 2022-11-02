@@ -1,0 +1,90 @@
+
+.sobre-nosotros{
+    height: 25em;
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 3em 0;
+}
+.sobre-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.sobre-seccion-titulo{
+    color: var(--secundario-500);
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.sobre-titulo{
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: var(--texto-900);
+}
+
+.tags{
+    display: flex;
+    width:50%;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.sobre-left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    
+}
+.sobre-texto {
+    width: 90%;
+}
+.sobre-img{
+    width: 50%;
+    height: 90%;
+    background-image: url('/assets/egipto-lugares-luxor.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 1.562em;
+}
+
+.tag-title{
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+/*MEDIA QUERIES*/
+@media  only screen and (max-width: 1160px){
+    
+    
+}
+
+@media  only screen and (max-width: 811px){
+    .sobre-nosotros{
+        height: auto;
+    }
+   .sobre-container{
+        flex-direction: column;
+        height: 100%;
+        gap: 2em;
+        text-align: center;
+   }
+   .sobre-seccion-titulo{
+    text-align: left;
+   }
+   .tags{
+        width: 100%;
+        justify-content: space-around;
+   }
+   .sobre-img{
+        height: 200px;
+        width: 100%;
+   }
+    
+}

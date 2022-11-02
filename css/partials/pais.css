@@ -1,0 +1,154 @@
+/* HEADER */
+.pais-header{
+    width: 100%;
+    height: 32em;
+    padding-top: 10em 0;
+}
+
+.pais-title-container{
+    max-width: 71em;   
+}
+
+.pais-title{
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 4em;
+    letter-spacing: .1em;
+    padding-top: 6em;
+}
+
+.pais-descripcion{
+    width: 60%;
+    margin:2em 0;
+    font-size: 1.25em;
+}
+
+/* Imagenes de fondo del header */
+.egipto{
+    background-image: url('/assets/egipto-lugares-cairo-2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.estadosUnidos{
+        background-image: url('/assets/imagenesEEUU/eeuu.jpg');
+        background-position: center;
+        background-size: cover;
+}
+.coreaDelSur{
+    background-image: url('/assets/corea/corea.jpg');
+        background-position: center;
+        background-size: cover;
+}
+
+
+/* ACTIVIDADES */
+.pais-actividades-container {
+    display: flex;
+    width: 100%;
+    margin-top: 3em;
+    
+}
+.pais-actividades {
+    width: 80%;
+    padding: 0;
+}
+
+.actividad-titulo {
+    width: 30%;
+}
+
+/* LUGARES */
+.pais-lugares-container{
+    width: 100%;
+}
+
+/* ALOJAMIENTO */
+.pais-alojamiento{
+    width: 80%;
+    padding: 0;
+}
+.pais-alojamiento-container{
+    display: flex;
+    width: 100%;
+    margin-top: 3em;
+}
+
+
+/* CARDS MD y LM */
+.cards-md-container{
+    width: 80%;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-md{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: .3em;
+    width: 22.5em;  
+    transition: all .5s;
+    cursor: pointer;
+    border-radius: 1.562em;
+    background-color: #fff;
+    min-width: 265px;
+
+}
+
+.card-md-descripcion{
+    font-size: .8em;
+}
+
+.card-md-tag, .card-lm-tg{
+    font-size: 12px;
+}
+
+.card-contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-md-title, .card-lm-title{
+    font-size: 1.2em;
+    text-decoration: underline;
+    color: var(--primario-500);
+}
+
+.card-md-ubicacion, .card-lm-lugarubicacion{
+    color: var(--texto-100);
+}
+
+.lugares-titulo, .actividad-titulo, .alojamiento-titulo {
+    color: var(--texto-500);
+}
+
+
+
+
+/*MEDIA QUERIES*/
+@media  only screen and (max-width: 1160px){
+    
+    
+}
+
+
+@media only screen and (max-width:924px){
+    .pais-descripcion{
+        width: 100%;
+    }
+    .pais-actividades-container, .pais-alojamiento-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .actividad-titulo, .alojamiento-titulo{
+        width: 100%;
+    }
+}
+
+@media  only screen and (max-width: 809px){
+   
+    
+    
+}
