@@ -30,7 +30,12 @@
     background-size: cover;
 }
 .estadosUnidos{
-        background-image: url('/assets/imagenesEEUU/estados\ unidos\ portada.jpg');
+        background-image: url('/assets/imagenesEEUU/eeuu.jpg');
+        background-position: center;
+        background-size: cover;
+}
+.coreaDelSur{
+    background-image: url('/assets/corea/corea.jpg');
         background-position: center;
         background-size: cover;
 }
