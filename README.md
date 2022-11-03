@@ -19,7 +19,7 @@
 <br>
 
 En el sitio se puede encontrar **destinos populares**, **lugares para visitar** de cada país, **actividades** y **alojamientos**. Además cuenta con la posibilidad de crear una cuenta.
-<br>
+Podras elegir entre los destinos mas populares como Estados Unidos,Corea del Sur ,Egipto y muchos mas.<br>
 
 <div align="center">
   
