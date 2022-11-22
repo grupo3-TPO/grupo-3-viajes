@@ -63,6 +63,8 @@ a{
     border-radius: 0.5em;
     width: 15.625em;
     transition: opacity 0.5s;
+    text-align: center;
+
 }
 
 .dropdown-icon{
@@ -89,7 +91,7 @@ a{
     content: '';
     display: block;
     height: 1px;
-    width: 65%;
+    width: 100%;
     background-color: var(--white);
 }
 .dropdown li{
@@ -151,6 +153,8 @@ a{
         transform:translateX(-50%) ;
         background-color: var(--primario-500);
         padding: 2em 5em 3em;
+        width: 100%;
+        transition: opacity 0.5s;
     }
     .hamburguer-menu{
         display: block;
@@ -160,7 +164,19 @@ a{
     .navbar{
         padding:2em ;
     }
+    
+    .dropdown{
+        width: 100%;
+        left: 0;
+        border-radius: 0;
+    }
 
+    .menu-continentes::before, .menu-continentes::after{
+        position: relative;
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
-
+    
 }
